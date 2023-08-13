@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display:flex;
+            justify-content: center;
+            background-color: white;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://wallpapercave.com/wp/wp6376847.jpg');
+            background-size: cover;
+            background-position: center;
+            transition: background-image 0.5s ease-in-out;
+        }
+        .Institute img{
+            max-width: 100px;
+            height:auto;
+        }
+        Institute {
+            align-self: flex-end;
+            margin-left: auto;
+            margin-top: 10px;
+        }
+        .register-form{
+        margin:auto;
+        border:1px solid rgb(189, 11, 11);
+        width:40vw;
+        text-align: center;
+        border-radius: 25px;
+       }
+       .register-form input{
+        padding:2%;
+        width:60%;
+       }
+       .register-form select{
+        padding:2%;
+        width:60%;
+       }
+       .register-form .btn-submit{
+        width:20vw;
+        padding:1% 0%;
+       }
+       .gender{
+        display:flex;
+        width: 20%;
+        margin: auto;
+       }
+       @media (min-width:600px){
+        body{
+            background-image: url('https://cdn.pixabay.com/photo/2016/03/22/15/29/blue-1273089_1280.jpg');
+        }
+       }
+       @media (max-width: 600px) {
+        .register-form {
+            max-width : 100%
+        }
+       }
+    </style>
+</head>
+<body>
+   
+    <form class="register-form" name="form1" action="https://www.google.com" target="_blank">
+    <h1>Bio Data</h1>
+    <p><input type="text" placeholder="Enter name"/></p>
+    <p><input name="email" placeholder="Enter email"/></p>
+    <p><input name="password" type="password" placeholder="Enter password"/></p>
+    <p><input name="Mobile Number" placeholder="Enter Mobile Number"/></p>
+    <p><input name="dob" type="date"/></p>
+    <p class="gender" >
+        <input type="radio" name="gender" />male
+        <input type="radio" name="gender"/>female
+    </p>
+    <p>
+        <select name="Qualification">
+            <option value="select Qualification">select a Qualification</option>
+            <option value="B.Tech">B.Tech</option>
+            <option value="Degree">Degree</option>
+            <option value="MBA or MCA">MBA or MCA</option>
+            </select>
+    </p>
+    <button class="btn-submit">Submit</button>
+    <div class="Institute">
+        <img width=50% src="https://s3-eu-west-1.amazonaws.com/tpd/logos/5d8f0f814aa64800010d86a6/0x0.png" alt="Institute ">
+      </div>
+    </form>
+</body>
+</html>
